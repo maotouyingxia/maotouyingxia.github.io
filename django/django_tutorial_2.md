@@ -4,7 +4,7 @@
 
 ## 创建项目
 
-在你想要创建Scrapy项目的目录下执行命令：
+在你想要创建Django项目的目录下执行命令：
 
 `django-admin startproject findshow`
 
