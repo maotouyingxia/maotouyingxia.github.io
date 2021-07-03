@@ -124,6 +124,16 @@
 }
 ```
 
+#### 修改用户名
+
+```
+{
+    "code": 403,
+    "message": "cannot modify username",
+    "data": null
+}
+```
+
 #### 无token
 
 ```

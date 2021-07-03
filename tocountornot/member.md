@@ -114,6 +114,16 @@
 }
 ```
 
+#### 成员下存在账单
+
+```
+{
+    "code": 403,
+    "message": "cannot delete member cause there is at least a bill under it",
+    "data": null
+}
+```
+
 ## 查找成员
 
 ### URL

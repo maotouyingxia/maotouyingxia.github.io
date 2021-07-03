@@ -114,6 +114,16 @@
 }
 ```
 
+#### 一级分类下存在二级分类
+
+```
+{
+    "code": 403,
+    "message": "cannot delete division cause there is at least a category under it",
+    "data": null
+}
+```
+
 ## 查找一级分类
 
 ### URL

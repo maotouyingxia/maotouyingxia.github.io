@@ -122,6 +122,16 @@
 }
 ```
 
+#### 修改一级分类
+
+```
+{
+    "code": 403,
+    "message": "cannot modify division",
+    "data": null
+}
+```
+
 ## 删除二级分类
 
 ### URL
@@ -150,6 +160,16 @@
 {
     "code": 404,
     "message": "category not found",
+    "data": null
+}
+```
+
+#### 二级分类下存在账单
+
+```
+{
+    "code": 403,
+    "message": "cannot delete category cause there is at least a bill under it",
     "data": null
 }
 ```

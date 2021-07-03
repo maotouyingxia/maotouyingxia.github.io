@@ -184,6 +184,16 @@
 }
 ```
 
+#### 修改账户成员或二级分类
+
+```
+{
+    "code": 403,
+    "message": "cannot modify card member or category",
+    "data": null
+}
+```
+
 ## 删除账单
 
 ### URL

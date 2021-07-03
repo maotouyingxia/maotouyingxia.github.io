@@ -114,6 +114,16 @@
 }
 ```
 
+#### 账户下存在账单
+
+```
+{
+    "code": 403,
+    "message": "cannot delete card cause there is at least a bill under it",
+    "data": null
+}
+```
+
 ## 查找账户
 
 ### URL
