@@ -40,8 +40,8 @@ COPY . /code/
 ## 运输镜像
 
 为了上传镜像，我们首先需要在Dockerhub中创建仓库：
-- [注册](https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade)并使用Dockerhub分享镜像
-- 登录到[Dockerhub](https://hub.docker.com/)
+- [注册](https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade) 并使用Dockerhub分享镜像
+- 登录到 [Dockerhub](https://hub.docker.com/)
 - 点击`Create Repository`
 - 把仓库命名为`spider`并选择可见性为`Public`
 - 点击`Create`
@@ -68,5 +68,5 @@ docker会从Dockerhub拉取对应的镜像并运行，当然你也可以预先�
 
 `docker pull YOUR-USER-NAME/spider`
 
-- [Sample application | Docker Documentation](https://docs.docker.com/get-started/02_our_app/)
-- [Share the application | Docker Documentation](https://docs.docker.com/get-started/04_sharing_app/)
+- [Sample application](https://docs.docker.com/get-started/02_our_app/)
+- [Share the application](https://docs.docker.com/get-started/04_sharing_app/)

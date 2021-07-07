@@ -170,5 +170,5 @@ submit用于提交按钮
 </form>
 ```
 
-- [HTML 表格 入门 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Tables/Basics)
-- [创建我的第一个表单 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/Forms/Your_first_form)
+- [HTML 表格 入门 - 学习 Web 开发](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Tables/Basics)
+- [创建我的第一个表单 - 学习 Web 开发](https://developer.mozilla.org/zh-CN/docs/Learn/Forms/Your_first_form)

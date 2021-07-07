@@ -1,6 +1,6 @@
 # 保存到数据库
 
-在这个教程中，我们将使用[PyMySQL](https://github.com/PyMySQL/PyMySQL/)连接到[MySQL](https://www.mysql.com/)数据库，并把爬虫提取的数据保存到数据库中。PyMySQL是基于[PEP 249](https://www.python.org/dev/peps/pep-0249/)使用纯Python实现MySQL客户端程序库。
+在这个教程中，我们将使用 [PyMySQL](https://github.com/PyMySQL/PyMySQL/) 连接到 [MySQL](https://www.mysql.com/) 数据库，并把爬虫提取的数据保存到数据库中。PyMySQL是基于 [PEP 249](https://www.python.org/dev/peps/pep-0249/) 使用纯Python实现MySQL客户端程序库。
 
 ## 定义数据对象
 
@@ -28,7 +28,7 @@ class ShowspiderItem(scrapy.Item):
     source = scrapy.Field()
 ```
 
-我们可以注意到Scrapy Item的定义类似于[Django Models](https://docs.djangoproject.com/en/dev/topics/db/models/)，不过因为没有不同的field类型的概念，Scrapy Item要简单得多。
+我们可以注意到Scrapy Item的定义类似于 [Django Models](https://docs.djangoproject.com/en/dev/topics/db/models/) ，不过因为没有不同的field类型的概念，Scrapy Item要简单得多。
 
 ## 定义数据表
 

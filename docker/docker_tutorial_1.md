@@ -1,25 +1,25 @@
 # 安装指南
 
-在这个指南中我们将在Win10开发机和Ubuntu服务器上安装Docker。如果你使用其他的平台，可以参考[Get Docker](https://docs.docker.com/get-docker/)。
+在这个指南中我们将在Win10开发机和Ubuntu服务器上安装Docker。如果你使用其他的平台，可以参考 [Get Docker](https://docs.docker.com/get-docker/) 。
 
 ## 在Windows上安装Docker
 
-取决于你使用的windows版本，你需要选择[WSL2](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10)或者[Hyper-V](https://docs.microsoft.com/zh-cn/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)作为Docker Desktop的后端。在这里我们使用WSL2，如果你需要使用Hyper-V，可以参考[System requirements](https://docs.docker.com/docker-for-windows/install/#system-requirements)。
+取决于你使用的windows版本，你需要选择 [WSL2](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10) 或者 [Hyper-V](https://docs.microsoft.com/zh-cn/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v) 作为Docker Desktop的后端。在这里我们使用WSL2，如果你需要使用Hyper-V，可以参考 [System requirements](https://docs.docker.com/docker-for-windows/install/#system-requirements)。
 
 ### 安装WSL2
 
-有关WSL2，可以参考[在 Windows 10 上安装 WSL](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10)。
+有关WSL2，可以参考 [在 Windows 10 上安装 WSL](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10)。
 
 要在Windows 10上成功运行WSL2需要满足以下硬件要求：
-- 带有[二级地址转换](https://en.wikipedia.org/wiki/Second_Level_Address_Translation)的64位处理器
+- 带有 [二级地址转换](https://en.wikipedia.org/wiki/Second_Level_Address_Translation) 的64位处理器
 - 4GB的系统内存
-- 在BIOS设置中启用硬件[虚拟化](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization-must-be-enabled)
+- 在BIOS设置中启用硬件 [虚拟化](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization-must-be-enabled) 
 
 ### 安装Docker Desktop
 
-Docker Desktop的安装包包括[Docker Engine](https://docs.docker.com/engine/)、Docker CLI client、[Docker Compose](https://docs.docker.com/compose/)、[Docker Content Trust](https://docs.docker.com/docker-for-windows/engine/security/trust.md)、[Kubernetes](https://github.com/kubernetes/kubernetes/)和[Credential Helper](https://github.com/docker/docker-credential-helpers/)。
+Docker Desktop的安装包包括 [Docker Engine](https://docs.docker.com/engine/) 、Docker CLI client、 [Docker Compose](https://docs.docker.com/compose/) 、 [Docker Content Trust](https://docs.docker.com/docker-for-windows/engine/security/trust.md) 、   [Kubernetes](https://github.com/kubernetes/kubernetes/) 和 [Credential Helper](https://github.com/docker/docker-credential-helpers/) 。
 
-[点击此处](https://desktop.docker.com/win/stable/amd64/Docker%20Desktop%20Installer.exe)下载`Docker Desktop Installer.exe`。
+[点击此处](https://desktop.docker.com/win/stable/amd64/Docker%20Desktop%20Installer.exe) 下载`Docker Desktop Installer.exe`。
 
 按照前面的要求启用Hyper-V或者安装WSL2后，你便可以运行`Docker Desktop Installer.exe`，像安装普通的应用程序一样安装Docker Desktop。
 
@@ -87,6 +87,6 @@ echo \
 docker-compose version 1.17.0, build ac53b73
 ```
 
-- [Install Docker Desktop on Windows | Docker Documentation](https://docs.docker.com/docker-for-windows/install/)
-- [Install Docker Engine on Ubuntu | Docker Documentation](https://docs.docker.com/engine/install/ubuntu/)
-- [Install Docker Compose | Docker Documentation](https://docs.docker.com/compose/install/)
+- [Install Docker Desktop on Windows](https://docs.docker.com/docker-for-windows/install/)
+- [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+- [Install Docker Compose](https://docs.docker.com/compose/install/)

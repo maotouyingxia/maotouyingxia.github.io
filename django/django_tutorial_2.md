@@ -39,7 +39,7 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
 
-我们会在稍后处理有关未应用最新数据库迁移的警告。使用浏览器访问 http://127.0.0.1:8000，你应该能看到一个“祝贺”页面，随着一只火箭发射，服务器已经开始运行。
+我们会在稍后处理有关未应用最新数据库迁移的警告。使用浏览器访问 http://127.0.0.1:8000 ，你应该能看到一个“祝贺”页面，随着一只火箭发射，服务器已经开始运行。
 
 默认情况下，`runserver`命令会将服务器设置未监听本机内部IP的8000端口，可以使用命令行参数指定服务器的监听端口：
 
@@ -103,7 +103,7 @@ Class-based views
     2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+    2. Add a URL to urlpatterns:  path('Card/', include('Card.urls'))
 """
 from django.contrib import admin
 from django.urls import path
@@ -119,4 +119,4 @@ urlpatterns = [
 
 现在我们已经把`search`视图添加进了URLconf。运行服务器，用浏览器访问 http://localhost:8000/search ，你应该能看到你在search视图里定义的`Hello, you're at search index.`。
 
-- [编写你的第一个 Django 应用，第 1 部分 | Django 文档 | Django](https://docs.djangoproject.com/zh-hans/3.2/intro/tutorial01/)
+- [编写你的第一个 Django 应用，第 1 部分](https://docs.djangoproject.com/zh-hans/3.2/intro/tutorial01/)

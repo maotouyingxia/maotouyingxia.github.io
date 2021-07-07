@@ -116,5 +116,5 @@ The Shire<br />
 <link rel="stylesheet" type="text/css" href="style.css">
 ```
 
-- [HTML 文字处理基础 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/learn/HTML/Introduction_to_HTML/HTML_text_fundamentals)
-- [高阶文字排版 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting)
+- [HTML 文字处理基础 - 学习 Web 开发](https://developer.mozilla.org/zh-CN/docs/learn/HTML/Introduction_to_HTML/HTML_text_fundamentals)
+- [高阶文字排版 - 学习 Web 开发](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting)

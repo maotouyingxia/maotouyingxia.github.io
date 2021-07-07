@@ -26,7 +26,7 @@ REST很快成为了网上开发web服务事实上的标准，因为它们易于�
 
 ## 入门
 
-在这个教程中，我们会用到[Spring Boot](https://spring.io/projects/spring-boot)。在[Spring Initializer](https://start.spring.io/)中为项目添加如下依赖：
+在这个教程中，我们会用到 [Spring Boot](https://spring.io/projects/spring-boot) 。在 [Spring Initializer](https://start.spring.io/) 中为项目添加如下依赖：
 - Web
 - JPA
 - H2
@@ -122,7 +122,7 @@ class Employee {
 - `id`，`name`和`role`是Employee域对象的属性。`id`的注解表明它是主键且由JPA提供者自动填充。
 - 创建了一个自定义的构造新对象的构造函数，但并没有id
 
-在定义了域对象之后，我们现在可以使用[Spring Data JPA](https://spring.io/guides/gs/accessing-data-jpa/)处理乏味的数据库交互。
+在定义了域对象之后，我们现在可以使用 [Spring Data JPA](https://spring.io/guides/gs/accessing-data-jpa/) 处理乏味的数据库交互。
 
 Spring Data JPA仓库是可对后端数据库做出创建，读取，更新和删除记录操作的方法接口。一些仓库在某些合适的地方还支持数据分页和分类。Spring Data基于接口中方法命名的约定综合实现。
 

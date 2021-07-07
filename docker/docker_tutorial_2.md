@@ -35,7 +35,7 @@ services:
 
 执行命令`docker stack deploy -c stack.yml mysql`或者`docker-compose -f stack.yml up`启动服务。
 
-[adminer](https://www.adminer.org/)是一个数据库管理工具。容器初始化完成后，访问 http://localhost:8080 ，你可以在adminer提供的图形界面连接并管理你的MySQL数据库。
+[adminer](https://www.adminer.org/) 是一个数据库管理工具。容器初始化完成后，访问 http://localhost:8080 ，你可以在adminer提供的图形界面连接并管理你的MySQL数据库。
 
 你还可以在`environment`中设置数据库`MYSQL_DATABASE`、用户名`MYSQL_USER`、密码`MYSQL_PASSWORD`等其他环境变量。
 
@@ -45,7 +45,7 @@ services:
 
 `docker network create somenetwork`
 
-在Docker中，同一个网络下不同容器中运行的服务可以相互通信，比如[Kibana](https://www.elastic.co/cn/kibana)。
+在Docker中，同一个网络下不同容器中运行的服务可以相互通信，比如 [Kibana](https://www.elastic.co/cn/kibana) 。
 
 运行Elasticsearch实例：
 

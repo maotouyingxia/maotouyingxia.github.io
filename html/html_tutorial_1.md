@@ -34,4 +34,4 @@ HTML注释(comment)用于提高代码的可读性。注释会被浏览器忽略�
 
 HTML字符实体用于显示HTML中的预留字符，如<需用`&lt`，`&#60`或`&#060`表示。因为浏览器会忽略HTML代码中多余的空格，所以可以使用`&nbsp`，即(non-breaking space)来显示多余的空格。
 
-- [开始学习 HTML - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
+- [开始学习 HTML - 学习 Web 开发](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML/Getting_started)

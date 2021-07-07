@@ -1,6 +1,6 @@
 # 提取动态加载的内容
 
-有些网页需要额外的请求来获取数据，这时候我们就需要复现那些获取需要的数据的请求。有时候重现特定的请求比较困难，或者你想得到一些请求给不了你的东西，比如网页在浏览器中的截图。在这个教程中，我们将使用[scrapy-splash](https://github.com/scrapy-plugins/scrapy-splash)来集成[Splash](https://github.com/scrapinghub/splash)的JavaScript渲染服务。
+有些网页需要额外的请求来获取数据，这时候我们就需要复现那些获取需要的数据的请求。有时候重现特定的请求比较困难，或者你想得到一些请求给不了你的东西，比如网页在浏览器中的截图。在这个教程中，我们将使用 [scrapy-splash](https://github.com/scrapy-plugins/scrapy-splash) 来集成 [Splash](https://github.com/scrapinghub/splash) 的JavaScript渲染服务。
 
 ## 安装
 
@@ -8,11 +8,11 @@
 
 `pip install scrapy-splash`
 
-scrapy-splash会调用Splash的HTTP API，所以你需要一个Splash实例。你可以使用下面的命令通过[Docker](https://www.docker.com/)运行Splash服务：
+scrapy-splash会调用Splash的HTTP API，所以你需要一个Splash实例。你可以使用下面的命令通过 [Docker](https://www.docker.com/) 运行Splash服务：
 
 `docker run -p 8050:8050 scrapinghub/splash`
 
-这条命令会拉取splash的镜像并在8050端口上运行Splash服务。Docker是广受欢迎的容器技术，有关Docker的内容可以参考[Docker](https://maotouyingxia.github.io//#docker)。
+这条命令会拉取splash的镜像并在8050端口上运行Splash服务。Docker是广受欢迎的容器技术，有关Docker的内容可以参考 [Docker](https://maotouyingxia.github.io//#docker)。
 
 ## 配置
 
@@ -30,7 +30,7 @@ DOWNLOADER_MIDDLEWARES = {
 }
 ```
 
-在默认的scrapy设置中优先级723在HttpProxyMiddleware (750)的前面。改变HttpCompressionMiddleware的优先级是为了进行高级响应处理，具体可以参考[issues/1895](https://github.com/scrapy/scrapy/issues/1895)
+在默认的scrapy设置中优先级723在HttpProxyMiddleware (750)的前面。改变HttpCompressionMiddleware的优先级是为了进行高级响应处理，具体可以参考 [issues/1895](https://github.com/scrapy/scrapy/issues/1895)
 
 把`SplashDeduplicateArgsMiddleware`添加到`settings.py`文件的`SPIDER_MIDDLEWARES`中：
 

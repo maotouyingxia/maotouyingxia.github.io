@@ -1,12 +1,12 @@
 # 安装指南
 
-在这个指南中我们将在Ubuntu中使用pip和venv来安装Django。如果需要在其他平台上进行安装，请参考完整的[安装指南](https://docs.djangoproject.com/zh-hans/3.2/topics/install/)。
+在这个指南中我们将在Ubuntu中使用pip和venv来安装Django。如果需要在其他平台上进行安装，请参考 [安装指南](https://docs.djangoproject.com/zh-hans/3.2/topics/install/)。
 
 ## 安装pip
 
-[pip](https://pypi.org/project/pip/)是一个Python包管理工具，它被用来安装和更新包。
+[pip](https://pypi.org/project/pip/) 是一个Python包管理工具，它被用来安装和更新包。
 
-Debian和大部分其他的发行版都包括一个[python-pip](https://packages.debian.org/stable/python-pip)包。你可以自己安装pip以确保你拥有最新的版本。建议使用系统pip在你的用户目录下安装pip。
+Debian和大部分其他的发行版都包括一个 [python-pip](https://packages.debian.org/stable/python-pip) 包。你可以自己安装pip以确保你拥有最新的版本。建议使用系统pip在你的用户目录下安装pip。
 
 `python3 -m pip install --user --upgrade pip`
 
@@ -19,7 +19,7 @@ pip 21.1.2 from /home/xiangxin/.local/lib/python3.8/site-packages/pip (python 3.
 
 ## venv相关
 
-[venv](https://docs.python.org/3/library/venv.html)允许你为不同的项目分别安装它们各自需要的包。它本质上是让你创建一个“虚拟”的Python环境并把包安装到虚拟环境中。当你切换项目时，你可以简单地创建一个虚拟环境而不用担心影响其他环境中安装的包。
+[venv](https://docs.python.org/3/library/venv.html) 允许你为不同的项目分别安装它们各自需要的包。它本质上是让你创建一个“虚拟”的Python环境并把包安装到虚拟环境中。当你切换项目时，你可以简单地创建一个虚拟环境而不用担心影响其他环境中安装的包。
 
 ### 创建虚拟环境
 
@@ -68,7 +68,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ### 设置数据库
 
-Python包含一个名为[SQLite](https://www.sqlite.org/)的轻量级数据库。如果你正在开发一个小项目或者不打算再生产环境部署的东西，你可以使用SQLite并跳过这一步。如果你需要使用[PostgreSQL](https://www.postgresql.org/)、[MariaDB](https://mariadb.org/)、[MySQL](https://www.mysql.com/)或者[Oracle](https://www.oracle.com/)等数据库，可以参考[数据库安装信息](https://docs.djangoproject.com/zh-hans/3.2/topics/install/#database-installation)。如果你需要在Django中使用MySQL，我们会在[创建模型](https://maotouyingxia.github.io//django//django_tutorial_3)里介绍这一部分。
+Python包含一个名为 [SQLite](https://www.sqlite.org/) 的轻量级数据库。如果你正在开发一个小项目或者不打算再生产环境部署的东西，你可以使用SQLite并跳过这一步。如果你需要使用 [PostgreSQL](https://www.postgresql.org/) 、 [MariaDB](https://mariadb.org/) 、[MySQL](https://www.mysql.com/)或者 [Oracle](https://www.oracle.com/) 等数据库，可以参考 [数据库安装信息](https://docs.djangoproject.com/zh-hans/3.2/topics/install/#database-installation)。如果你需要在Django中使用MySQL，我们会在 [创建模型](https://maotouyingxia.github.io//django//django_tutorial_3) 里介绍这一部分。
 
 ### 安装Django
 
@@ -86,5 +86,5 @@ Python包含一个名为[SQLite](https://www.sqlite.org/)的轻量级数据库�
 3.2.4
 ```
 
-- [快速安装指南 | Django 文档 | Django](https://docs.djangoproject.com/zh-hans/3.2/intro/install/)
-- [如何安装 Django | Django 文档 | Django](https://docs.djangoproject.com/zh-hans/3.2/topics/install/#installing-official-release)
+- [快速安装指南](https://docs.djangoproject.com/zh-hans/3.2/intro/install/)
+- [如何安装Django](https://docs.djangoproject.com/zh-hans/3.2/topics/install/#installing-official-release)

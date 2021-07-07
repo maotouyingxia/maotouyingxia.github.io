@@ -2,9 +2,9 @@
 
 ## 数据库配置
 
-打开`findshow/settings.py`，这是个包含Django项目设置的Python模块。通常，这个配置文件使用[SQLite](https://sqlite.org/index.html)作为默认数据库。Python内置SQLite，所以你无需安装额外的东西来使用它。但当你开始一个真正的项目时，你可能更倾向使用一个更具扩展性的数据库，例如[PostgreSQL](https://www.postgresql.org/)。
+打开`findshow/settings.py`，这是个包含Django项目设置的Python模块。通常，这个配置文件使用 [SQLite](https://sqlite.org/index.html) 作为默认数据库。Python内置SQLite，所以你无需安装额外的东西来使用它。但当你开始一个真正的项目时，你可能更倾向使用一个更具扩展性的数据库，例如 [PostgreSQL](https://www.postgresql.org/) 。
 
-如果你想使用其他的数据库，你需要安装合适的数据库驱动，然后改变配置文件中`DATABASES 'default'`项目中的一些键值，以MySQL数据库为例，你需要安装[mysqlclient](https://pypi.org/project/mysqlclient/)并在`settings.py`中配置如下内容：
+如果你想使用其他的数据库，你需要安装合适的数据库驱动，然后改变配置文件中`DATABASES 'default'`项目中的一些键值，以MySQL数据库为例，你需要安装 [mysqlclient](https://pypi.org/project/mysqlclient/) 并在`settings.py`中配置如下内容：
 
 ```
 import os
@@ -200,7 +200,7 @@ Superuser created successfully.
 
 ### 进入管理站点页面
 
-使用你在前面创建的超级用户登录，然后你应该会看见Django管理页面的索引页。在这里你能看到可编辑的组和用户，它们是由[django.contrib.auth](https://docs.djangoproject.com/zh-hans/3.2/topics/auth/#module-django.contrib.auth)提供的，这是Django的认证框架。
+使用你在前面创建的超级用户登录，然后你应该会看见Django管理页面的索引页。在这里你能看到可编辑的组和用户，它们是由 [django.contrib.auth](https://docs.djangoproject.com/zh-hans/3.2/topics/auth/#module-django.contrib.auth) 提供的，这是Django的认证框架。
 
 ### 向管理页面中加入搜索应用
 
@@ -218,4 +218,4 @@ admin.site.register(Show)
 
 现在你应该能在索引也看到search应用以及Show模型。在这里你可以方便地添加，删除以及修改演出。
 
-- [编写你的第一个 Django 应用，第 2 部分 | Django 文档 | Django](https://docs.djangoproject.com/zh-hans/3.2/intro/tutorial02/)
+- [编写你的第一个 Django 应用，第 2 部分](https://docs.djangoproject.com/zh-hans/3.2/intro/tutorial02/)

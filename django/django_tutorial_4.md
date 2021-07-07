@@ -1,6 +1,6 @@
 # 全文检索
 
-在这个教程中，我们将通过[Haystack](http://haystacksearch.org/)框架调用[Elasticsearch](https://www.elastic.co/cn/)服务实现演出信息的全文检索。Elasticsearch是广受欢迎的开源搜索解决方案。而Haystack为Django提供了模块化的搜索，它支持的搜索引擎有[Solr](http://lucene.apache.org/solr)、[Elasticsearch](http://elasticsearch.org/)、[Whoosh](http://whoosh.ca/)以及[Xapian](http://xapian.org/)。
+在这个教程中，我们将通过 [Haystack](http://haystacksearch.org/) 框架调用 [Elasticsearch](https://www.elastic.co/cn/) 服务实现演出信息的全文检索。Elasticsearch是广受欢迎的开源搜索解决方案。而Haystack为Django提供了模块化的搜索，它支持的搜索引擎有 [Solr](http://lucene.apache.org/solr) 、 [Elasticsearch](http://elasticsearch.org/) 、 [Whoosh](http://whoosh.ca/) 以及 [Xapian](http://xapian.org/) 。
 
 ## 安装
 
@@ -12,7 +12,7 @@
 
 `pip install elasticsearch==5`
 
-目前Haystack支持Elasticsearch 1.x、2.x以及5.x。有关安装Elasticsearch的部分，可以参考[下载Elasticsearch](https://www.elastic.co/downloads/elasticsearch)。如果你使用Docker，你可以使用下面的命令拉取镜像：
+目前Haystack支持Elasticsearch 1.x、2.x以及5.x。有关安装Elasticsearch的部分，可以参考 [下载Elasticsearch](https://www.elastic.co/downloads/elasticsearch) 。如果你使用Docker，你可以使用下面的命令拉取镜像：
 
 `docker pull elasticsearch:5.0`
 
@@ -24,7 +24,7 @@
 
 `docker run -d --name elasticsearch --net somenetwork -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:5.0`
 
-如果你使用其他的搜索引擎，可以参考[Installing Search Engines](https://django-haystack.readthedocs.io/en/master/installing_search_engines.html)
+如果你使用其他的搜索引擎，可以参考 [Installing Search Engines](https://django-haystack.readthedocs.io/en/master/installing_search_engines.html) 
 
 ## 配置
 
@@ -59,7 +59,7 @@ HAYSTACK_CONNECTIONS = {
 }
 ```
 
-如果你使用其他的版本或其他的搜索引擎，可以参考[Modify Your settings.py](https://django-haystack.readthedocs.io/en/master/tutorial.html#modify-your-settings-py)。
+如果你使用其他的版本或其他的搜索引擎，可以参考 [Modify Your settings.py](https://django-haystack.readthedocs.io/en/master/tutorial.html#modify-your-settings-py) 。
 
 ## 处理数据
 
@@ -110,7 +110,7 @@ class ShowIndex(indexes.SearchIndex, indexes.Indexable):
 
 ### 搜索模板
 
-在`findshow/search/templates/search`下参考[search template](https://django-haystack.readthedocs.io/en/master/tutorial.html#search-template)创建模板文件`search.html`。
+在`findshow/search/templates/search`下参考 [search template](https://django-haystack.readthedocs.io/en/master/tutorial.html#search-template) 创建模板文件`search.html`。
 
 注意到`page.object_list`实际上是`SearchResult`对象的列表而不是独立的模型。这些对象包括从记录中按照搜索引擎的索引和排序返回的所有数据。它们可以通过`{{ result.object }}`直接访问模型得到结果。所以`{{ result.object.title }}`使用了数据库中实际的`Show`对象并访问了它的`title`域。
 
@@ -120,7 +120,7 @@ class ShowIndex(indexes.SearchIndex, indexes.Indexable):
 
 `python manage.py rebuild_index`
 
-使用标准的`SearchIndex`，你的索引只会在你执行`python manage.py rebuild_index`重建索引或者执行`python manage.py update_index`更新索引时才会更新。所以你应该配置一个更新的cron定时任务，有关定时任务的内容可以参考[使用 cron 调度任务](https://linux.cn/article-13383-1.html)。
+使用标准的`SearchIndex`，你的索引只会在你执行`python manage.py rebuild_index`重建索引或者执行`python manage.py update_index`更新索引时才会更新。所以你应该配置一个更新的cron定时任务，有关定时任务的内容可以参考 [使用 cron 调度任务](https://linux.cn/article-13383-1.html) 。
 
 当然，如果你的业务流量不大又或者你的搜索引擎能够地很好应付它们。你也可以考虑使用`RealtimeSignalProcessor`自动地处理更新和删除并即时更新索引。
 

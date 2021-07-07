@@ -1,12 +1,12 @@
 # 安装指南
 
-在这个指南中我们将在Ubuntu中使用pip和venv来安装Scrapy。如果需要在其他平台上进行安装，请参考完整的[安装指南](https://docs.scrapy.org/en/latest/intro/install.html)。
+在这个指南中我们将在Ubuntu中使用pip和venv来安装Scrapy。如果需要在其他平台上进行安装，请参考完整的 [安装指南](https://docs.scrapy.org/en/latest/intro/install.html) 。
 
 ## 安装pip
 
-[pip](https://pypi.org/project/pip/)是一个Python包管理工具，它被用来安装和更新包。
+[pip](https://pypi.org/project/pip/) 是一个Python包管理工具，它被用来安装和更新包。
 
-Debian和大部分其他的发行版都包括一个[python-pip](https://packages.debian.org/stable/python-pip)包。你可以自己安装pip以确保你拥有最新的版本。建议使用系统pip在你的用户目录下安装pip。
+Debian和大部分其他的发行版都包括一个 [python-pip](https://packages.debian.org/stable/python-pip) 包。你可以自己安装pip以确保你拥有最新的版本。建议使用系统pip在你的用户目录下安装pip。
 
 `python3 -m pip install --user --upgrade pip`
 
@@ -19,7 +19,7 @@ pip 21.1.2 from /home/xiangxin/.local/lib/python3.8/site-packages/pip (python 3.
 
 ## venv相关
 
-[venv](https://docs.python.org/3/library/venv.html)允许你为不同的项目分别安装它们各自需要的包。它本质上是让你创建一个“虚拟”的Python环境并把包安装到虚拟环境中。当你切换项目时，你可以简单地创建一个虚拟环境而不用担心影响其他环境中安装的包。
+[venv](https://docs.python.org/3/library/venv.html) 允许你为不同的项目分别安装它们各自需要的包。它本质上是让你创建一个“虚拟”的Python环境并把包安装到虚拟环境中。当你切换项目时，你可以简单地创建一个虚拟环境而不用担心影响其他环境中安装的包。
 
 ### 创建虚拟环境
 
@@ -56,11 +56,11 @@ pip 21.1.2 from /home/xiangxin/.local/lib/python3.8/site-packages/pip (python 3.
 
 Scrapy使用纯Python实现，它主要依赖于以下Python包：
 
-- [lxml](https://lxml.de/index.html)，一个高效XML和HTML语法分析器
-- [parsel](https://pypi.org/project/parsel/)，一个基于lxml编写的HTML/XML数据提取库
-- [w3lib](https://pypi.org/project/w3lib/)，一个多目标的用于处理URL和网页编码的工具
-- [twisted](https://twistedmatrix.com/trac/)，一个异步网络框架
-- [cryptography](https://cryptography.io/en/latest/)和[pyOpenSSL](https://pypi.org/project/pyOpenSSL/)，处理各种网络层级的安全需求
+- [lxml](https://lxml.de/index.html) ，一个高效XML和HTML语法分析器
+- [parsel](https://pypi.org/project/parsel/) ，一个基于lxml编写的HTML/XML数据提取库
+- [w3lib](https://pypi.org/project/w3lib/) ，一个多目标的用于处理URL和网页编码的工具
+- [twisted](https://twistedmatrix.com/trac/) ，一个异步网络框架
+- [cryptography](https://cryptography.io/en/latest/) 和 [pyOpenSSL](https://pypi.org/project/pyOpenSSL/) ，处理各种网络层级的安全需求
 
 在Ubuntu下安装Scrapy需要先安装以下依赖：
 

@@ -39,7 +39,7 @@ volumes:
 
 `container_name`指定了容器的名称。
 
-`command`中的选项为不支持[caching_sha2_password](https://dev.mysql.com/doc/refman/8.0/en/caching-sha2-pluggable-authentication.html)验证方式的数据库驱动保留了mysql_native_password的认证方式，并指定使用utf8mb4字符集。
+`command`中的选项为不支持 [caching_sha2_password](https://dev.mysql.com/doc/refman/8.0/en/caching-sha2-pluggable-authentication.html) 验证方式的数据库驱动保留了mysql_native_password的认证方式，并指定使用utf8mb4字符集。
 
 `environment`中定义了一系列环境变量。
 
@@ -73,9 +73,9 @@ services:
 
 因为Django应用程序依赖于MySQL数据库，所以如果Django先于MySQL完成初始化并向仍在初始化的MySQL发起连接便会发生错误。仅通过`depends_on`指明服务的依赖并不能解决这个问题，因为`depends_on`只能决定容器的启动和停止顺序，并不能保证MySQL在Django之前完成初始化。
 
-比较好的解决方案是使用[wait-for-it](https://tracker.debian.org/pkg/wait-for-it)，许多发行版都包含整个包，建议在构建镜像时使用`apt-get`预先安装这个包。`wait-for-it`命令可以保持等待直到指定的主机上指定的端口可用，可以使用`-t`选项指定超时时间。可以使用服务的名字直接作为主机名，比如这里的`db`。
+比较好的解决方案是使用 [wait-for-it](https://tracker.debian.org/pkg/wait-for-it) ，许多发行版都包含这个包，建议在构建镜像时使用`apt-get`预先安装这个包。`wait-for-it`命令可以保持等待直到指定的主机上指定的端口可用，可以使用`-t`选项指定超时时间。可以使用服务的名字直接作为主机名，比如这里的`db`。
 
-在这里，我们保持等待直至MySQL服务可用，然后执行数据库迁移的相关命令，最后使用[gunicorn](https://gunicorn.org/)运行Django应用程序。
+在这里，我们保持等待直至MySQL服务可用，然后执行数据库迁移的相关命令，最后使用 [gunicorn](https://gunicorn.org/) 运行Django应用程序。
 
 可以使用`bash -c`和`&&`执行多条命令。
 
@@ -121,5 +121,5 @@ services:
 
 因为Docker容器会在前台进程执行完毕后退出，所以这里需要使用命令`nginx -g 'daemon off;'`在前台运行Nginx。
 
-- [Quickstart: Compose and Django | Docker Documentation](https://docs.docker.com/samples/django/)
-- [Control startup and shutdown order in Compose | Docker Documentation](https://docs.docker.com/compose/startup-order/)
+- [Quickstart: Compose and Django](https://docs.docker.com/samples/django/)
+- [Control startup and shutdown order in Compose](https://docs.docker.com/compose/startup-order/)

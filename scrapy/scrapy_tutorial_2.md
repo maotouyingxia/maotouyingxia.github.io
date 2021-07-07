@@ -1,6 +1,6 @@
 # 基础教程
 
-在这个教程中，我们将爬取[秀动网](https://www.showstart.com/)，这是一个音乐现场票务网站。
+在这个教程中，我们将爬取 [秀动网](https://www.showstart.com/) ，这是一个音乐现场票务网站。
 
 ## 创建项目
 
@@ -252,13 +252,13 @@ class ShowstartSpider(scrapy.Spider):
 
 `scrapy crawl showstart -O showstart.json`
 
-这会生成一个保存了所有提取的数据以[JSON](https://www.json.org/json-en.html)序列化的`showstart.json`文件。
+这会生成一个保存了所有提取的数据以 [JSON](https://www.json.org/json-en.html) 序列化的`showstart.json`文件。
 
-`-O`选项会覆盖已有的文件；使用`-o`则是在已有的文件中添加新的内容。但是，向JSON文件中添加新内容会让其违背JSON的格式，所以在已有文件中添加内容时应考虑使用其他的序列化格式，比如[JSON Lines](http://jsonlines.org/)：
+`-O`选项会覆盖已有的文件；使用`-o`则是在已有的文件中添加新的内容。但是，向JSON文件中添加新内容会让其违背JSON的格式，所以在已有文件中添加内容时应考虑使用其他的序列化格式，比如 [JSON Lines](http://jsonlines.org/) ：
 
 `scrapy crawl showstart -o showstart.jl`
 
-在更复杂的情形中，你也许需要把提取的数据保存的数据库中，可以参考[保存到数据库](https://maotouyingxia.github.io//scrapy//scrapy_tutorial_3)。
+在更复杂的情形中，你也许需要把提取的数据保存的数据库中，可以参考 [保存到数据库](https://maotouyingxia.github.io//scrapy//scrapy_tutorial_3) 。
 
 ## 追踪链接
 
