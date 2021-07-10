@@ -71,3 +71,17 @@
 [接口调用日志](https://maotouyingxia.github.io//springboot//springboot_tutorial_4)
 
 [身份认证](https://maotouyingxia.github.io//springboot//springboot_tutorial_5)
+
+## [xv6-riscv](#xv6-riscv)
+
+[xv6](https://pdos.csail.mit.edu/6.828/2019/xv6.html) 是一个用于教学的操作系统，它使用 [riscv](https://riscv.org/) 指令集实现，被用于MIT的操作系统实验。
+
+[环境搭建](https://maotouyingxia.github.io//xv6//env)
+
+[Xv6与Unix实用程序](https://maotouyingxia.github.io//xv6//util)
+
+[实现一个简单的shell](https://maotouyingxia.github.io//xv6//sh)
+
+[锁机制的应用](https://maotouyingxia.github.io//xv6//lock)
+
+[内存管理之伙伴系统](https://maotouyingxia.github.io//xv6//alloc)
