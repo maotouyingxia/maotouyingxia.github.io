@@ -2,6 +2,10 @@
 
 在这个教程中，我们将使用 [PyMySQL](https://github.com/PyMySQL/PyMySQL/) 连接到 [MySQL](https://www.mysql.com/) 数据库，并把爬虫提取的数据保存到数据库中。PyMySQL是基于 [PEP 249](https://www.python.org/dev/peps/pep-0249/) 使用纯Python实现MySQL客户端程序库。
 
+## 安装PyMySQL
+
+`pip install PyMySQL`
+
 ## 定义数据对象
 
 在Scrapy中，`item`类似于字典，是`scrapy.Item`的子类，可以使用简单的类定义语法和`Field`对象来定义。下面在`showspider/items.py`中，定义我们要处理的数据对象：

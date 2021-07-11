@@ -58,6 +58,8 @@
 
 [提取动态加载的内容](https://maotouyingxia.github.io//scrapy//scrapy_tutorial_4)
 
+[JavaScript预渲染](https://maotouyingxia.github.io//scrapy//scrapy_tutorial_5)
+
 ## [SpringBoot](#springboot)
 
 [SpringBoot](https://spring.io/projects/spring-boot) 通过让你能够“直接运行”让开发基于Spring的独立生产级应用变得简单。因为集成了许多Spring平台和第三方库的内容，SpringBoot很容易上手。大多数的SpringBoot应用只需要极少的Spring配置。
